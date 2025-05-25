@@ -1,0 +1,46 @@
+'https://plantuml.com/mindmap-diagram
+@startmindmap
+
+title veux - Partitions layout
+* Stock ROM
+** boot
+*** header v3
+*** data
+****[#lightblue] kernel
+**** ramdisk
+***** init
+*****[#orange] recovery
+** vendor_boot
+*** header v3
+****[#lightblue] cmdline
+*** data
+****[#lightblue] dtb
+**** ramdisk
+*****[#lightblue] modules
+***** fstab
+** dtbo
+***[#lightblue] dtb overlay
+* AOSP ROM
+** boot
+*** header v3
+*** data
+****[#lightblue] kernel
+**** ramdisk
+***** init
+** vendor_boot
+*** header v3
+****[#lightblue] cmdline
+*** data
+****[#lightblue] dtb
+**** ramdisk
+*****[#orange] recovery
+***** fstab
+** dtbo
+*** <empty>
+
+legend right
+|<#orange> Recovery|
+|<#lightblue> Kernel resources|
+endlegend
+
+@endmindmap
