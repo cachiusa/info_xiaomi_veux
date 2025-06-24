@@ -48,5 +48,6 @@ You can use this method to:
 
 To make sure these 3 `.img` files are working, they must be extracted from your current ROM, or the ROM you are about to install
 - For MIUI/HyperOS (fastboot installer only), look inside `images` directory
-- For AOSP, your maintainer should provide them. If not, use [payload-dumper-go](https://github.com/ssut/payload-dumper-go) to extract these from the OTA package
+- For AOSP, your maintainer should provide them.
+    - If not, use [payload-dumper-go](https://github.com/ssut/payload-dumper-go) to extract these from the OTA package
 - For ported/modded ROM, your maintainer should provide them
