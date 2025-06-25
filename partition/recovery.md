@@ -28,7 +28,7 @@ or this,
 fastboot flash dtbo dtbo.img
 fastboot reboot
 ```
-because you are about to update kernel components, and you may face:
+because you will mix-and-match kernel components individually, and you may face:
 - stuck in fastboot/bootloader mode
 - bootloop
 - broken drivers (modem, wi-fi, bluetooth...)
