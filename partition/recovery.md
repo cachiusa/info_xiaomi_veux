@@ -7,7 +7,7 @@ The actual recovery resides in either `boot` or `vendor_boot` partition, dependi
 
 Do not try to `fastboot boot recovery.img`, it will not work.
 
-## DO NOT
+## ⛔ DO NOT
 ```
 fastboot flash boot boot.img
 fastboot reboot
@@ -33,7 +33,7 @@ because you will mix-and-match kernel components individually, and you may face:
 - bootloop
 - broken drivers (modem, wi-fi, bluetooth...)
 
-## DO
+## ✅ DO
 ```
 fastboot flash boot boot.img
 fastboot flash vendor_boot vendor_boot.img
